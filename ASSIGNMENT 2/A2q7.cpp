@@ -12,7 +12,7 @@ void inv(int arr[], int n){
     
    for(i=0;i<n;i++){
         for(j=i+1;j<n;j++){// to check the next element and running a loop inside a loop 
-            if(arr[i]>arr[i+1]){
+            if(arr[i]>arr[j]){
                 count++;
 
             }
@@ -30,4 +30,5 @@ int main(){
     int size=sizeof(arr)/sizeof(arr[0]);
     i.inv(arr,size);
     return 0;
+
 }
