@@ -45,7 +45,7 @@ public:
         }
     }
 
-    void dequeue()
+    int dequeue()
     {
         if (isEmpty())
         {
@@ -57,12 +57,16 @@ public:
             // we are not storing the value of dequeued element anywhere, we're just dequeing it
             // cout << "dequeued element" << arr[front] << endl;
             // front++;
-             arr[front]=-1;
+int ans=arr[front];
+            arr[front]=-1;
             front++;
             if(front==rear){
                 front=0;
                 rear=0;
+            }
+            return ans;
         }
+
     }
 
     void peek()
@@ -150,3 +154,4 @@ int main() {
     return 0;
 
 }
+
