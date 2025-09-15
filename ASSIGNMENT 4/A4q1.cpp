@@ -55,8 +55,13 @@ public:
         else
         {
             // we are not storing the value of dequeued element anywhere, we're just dequeing it
-            cout << "dequeued element" << arr[front] << endl;
+            // cout << "dequeued element" << arr[front] << endl;
+            // front++;
+             arr[front]=-1;
             front++;
+            if(front==rear){
+                front=0;
+                rear=0;
         }
     }
 
@@ -143,4 +148,5 @@ int main() {
     } while (option != 7);
 
     return 0;
+
 }
