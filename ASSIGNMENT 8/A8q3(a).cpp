@@ -51,6 +51,7 @@ struct node *insert_withoutparent(node *temp, int key)
     {
         cout << "duplicate value exists i.e " << key << endl;
     }
+    return temp;
 };
 int main()
 {
